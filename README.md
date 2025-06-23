@@ -61,11 +61,11 @@ Double-click on the .bat file in case python is installed: <br/>
 
 3 - Set: <br/>
 
-    - Pythonw.exe path (can be found on your pycronx_env environment folder) <br/>
-    - Script path <br/>
-    - Interval/frequency schedule <br/>
-    - Display icon or run silently <br/>
-    - Set to run the script when computer startup <br/>
+  - Pythonw.exe path (can be found on your pycronx_env environment folder) <br/>
+  - Script path <br/>
+  - Interval/frequency schedule <br/>
+  - Display icon or run silently <br/>
+  - Set to run the script when computer startup <br/>
     
 4 - Click "Start" to run the task. <br/>
 
@@ -73,9 +73,9 @@ Double-click on the .bat file in case python is installed: <br/>
 
 6 - Right-click the icon to access quick actions: <br/>
 
-    - Open the interface <br/>
-    - View scheduled tasks <br/>
-    - Exit the application <br/>
+  - Open the interface <br/>
+  - View scheduled tasks <br/>
+  - Exit the application <br/>
     
 This enables background execution with minimal UI interference. <br/>
 

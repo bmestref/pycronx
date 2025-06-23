@@ -13,7 +13,6 @@ A Python-powered task scheduler built as a lightweight alternative to Windows Ta
 First, clone this repo to your local machine: <br/>
 ```
 git clone https://github.com/bmestref/pycronx.git
-
 ```
 Next, create an environment to alocate the required libraries (only two libraries are required: ```Pillow``` and ```pystray```) via ```venv```: <br/>
 ```

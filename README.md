@@ -9,6 +9,18 @@ A Python-powered task scheduler built as a lightweight alternative to Windows Ta
   from where details of the task can be consulted as well as terminated. Icons will be automatically saved to the generated ```Icons``` folder.<br/>
 - Track the performance of yours tasks checking the self-generated log file of the task within the ```TaskLogs``` folder. <br/>
 
+## Repo structure
+```
+pycronx/
+│
+├── PyCronX.bat              # Main code 
+├── TaskScheduler.py         # Calls runschedule.py and setups the GUI
+├── requirements.txt         # Dependencies
+├── runschedule.py           # Runs the target python script
+├── test.py                  # Test function
+└── README.md
+```
+
 ## Setup
 First, clone this repo to your local machine: <br/>
 ```
@@ -48,6 +60,7 @@ Double-click on the .bat file in case python is installed: <br/>
 2 - Click "Add Task" to schedule a new Python script. <br/>
 
 3 - Set: <br/>
+
     - Pythonw.exe path (can be found on your pycronx_env environment folder) <br/>
     - Script path <br/>
     - Interval/frequency schedule <br/>
@@ -59,7 +72,11 @@ Double-click on the .bat file in case python is installed: <br/>
 5 - After launching, a small icon appears in the Windows taskbar tray (bottom-right) if the display icon was selected. <br/>
 
 6 - Right-click the icon to access quick actions: <br/>
+
     - Open the interface <br/>
     - View scheduled tasks <br/>
     - Exit the application <br/>
+    
 This enables background execution with minimal UI interference. <br/>
+
+For additional information, please see the video below. <br/>

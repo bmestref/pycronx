@@ -48,7 +48,7 @@ To launch the GUI scheduler interface in case python is not installed in your lo
 
 ### Option 1: From Python
 ```
-<route of python.exe file from the pycronx_env environment> TaskScheduler.py
+<path of python.exe file from pycronx_env> TaskScheduler.py
 ```
 
 ### Option 2: From .bat file 

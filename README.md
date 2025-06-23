@@ -4,7 +4,7 @@ A Python-powered task scheduler built as a lightweight alternative to Windows Ta
 ## Key Features
 - Unlike Windows Task Scheduler, permissions are handled internally so cross-platform python files are supported (as an example, it enables to interact with Outlook without employing Azure services). <br/>
 - Task manager GUI to interact directly with tasks, enabling creation or termination of an unlimited number of tasks. <br/>
-- You can schedule tasks to be run from the computer startup with custom schedules (every N seconds, every N minutes, every N hours, everyday at N, weekly at N). <br/>
+- You can schedule tasks to be run from the computer startup with custom schedules (every N seconds, every N minutes, every N hours, everyday at HH:MM, weekly at HH:MM). <br/>
 - Additionally, you will be able to pick between running the task silently or displaying an icon (automatically generated or picked by yourself) bottom-right Windows taskbar icon menu,
   from where details of the task can be consulted as well as terminated. Icons will be automatically saved to the generated ```Icons``` folder.<br/>
 - Track the performance of yours tasks checking the self-generated log file of the task within the ```TaskLogs``` folder. <br/>

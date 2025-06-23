@@ -49,24 +49,18 @@ Double-click on the .bat file in case python is installed: <br/>
 2 - Click "Add Task" to schedule a new Python script. <br/>
 
 3 - Set: <br/>
+    - Pythonw.exe path (can be found on your pycronx_env environment folder) <br/>
+    - Script path <br/>
+    - Interval/frequency schedule <br/>
+    - Display icon or run silently <br/>
+    - Set to run the script when computer startup <br/>
+    
+4 - Click "Start" to run the task. <br/>
 
-Script path
+5 - After launching, a small icon appears in the Windows taskbar tray (bottom-right) if the display icon was selected. <br/>
 
-Interval/frequency
-
-Optional arguments
-
-Click "Start" to run the task.
-
-📎 System Tray Integration
-After launching, a small icon appears in the Windows taskbar tray (bottom-right).
-
-Right-click the icon to access quick actions:
-
-Open the interface
-
-View scheduled tasks
-
-Exit the application
-
-This enables background execution with minimal UI interference.
+6 - Right-click the icon to access quick actions: <br/>
+    - Open the interface <br/>
+    - View scheduled tasks <br/>
+    - Exit the application <br/>
+This enables background execution with minimal UI interference. <br/>

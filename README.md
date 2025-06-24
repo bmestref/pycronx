@@ -80,4 +80,4 @@ Double-click on the .bat file in case python is installed: <br/>
 This enables background execution with minimal UI interference. <br/>
 
 For additional information, please see the video below. <br/>
-![Demostration video](video_demostration.mp4)
+[Demostration video](video_demostration.mp4)

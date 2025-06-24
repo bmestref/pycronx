@@ -67,7 +67,7 @@ C:\Users\YourUser\.conda\envs\pycronx_env\pythonw.exe TaskScheduler.py
 - **Option 2**: Launch from BAT file (if Python is installed and added to PATH)
 Just double-click the PyCronX.bat file. <br/>
 
-Note: pythonw.exe is used to avoid opening a terminal window alongside the GUI. <br/>
+**Note**: pythonw.exe is used to avoid opening a terminal window alongside the GUI. <br/>
 
 ## 🧠 How to Use
 - Launch the GUI using the BAT file or direct command.

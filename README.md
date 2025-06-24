@@ -1,83 +1,97 @@
-# pycronx
-A Python-powered task scheduler built as a lightweight alternative to Windows Task Scheduler, fully scriptable, cross-platform, user friendly and cron-compatible. Task scheduling, the Pythonic way. 
+# PyCronX
+A Python-powered task scheduler — lightweight, cross-platform, and cron-compatible — offering a Pythonic alternative to Windows Task Scheduler. With a user-friendly interface and advanced control features, PyCronX simplifies script scheduling without the complexity of system-level permissions. <br/>
 
-## Key Features
-- Unlike Windows Task Scheduler, permissions are handled internally so cross-platform python files are supported (as an example, it enables to interact with Outlook without employing Azure services). <br/>
-- Task manager GUI to interact directly with tasks, enabling creation or termination of an unlimited number of tasks. <br/>
-- You can schedule tasks to be run from the computer startup with custom schedules (every N seconds, every N minutes, every N hours, everyday at HH:MM, weekly at  <weekday> HH:MM). <br/>
-- Additionally, you will be able to pick between running the task silently or displaying an icon (automatically generated or picked by yourself) bottom-right Windows taskbar icon menu,
-  from where details of the task can be consulted as well as terminated. Icons will be automatically saved to the generated ```Icons``` folder.<br/>
-- Track the performance of yours tasks checking the self-generated log file of the task within the ```TaskLogs``` folder. <br/>
+## 🔧 Key Features
+Cross-platform scripting: Unlike Windows Task Scheduler, PyCronX handles permissions internally, enabling the scheduling of Python scripts across platforms (including scripts that interact with Outlook without requiring Azure services). <br/>
 
-## Repo structure
+- **Graphical Task Manager**: Launch a GUI to manage, create, or terminate an unlimited number of scheduled Python tasks.
+- **Flexible Scheduling Options**:
+  - Run tasks at computer startup
+  - Repeat every N seconds, minutes, or hours
+  - Run daily at a specific time (HH:MM)
+  - Schedule weekly runs on specific weekdays at chosen times
+- **System Tray Integration**: Optionally show a custom or auto-generated icon in the Windows taskbar (bottom-right corner). Right-click this icon to:
+- **View task details**
+- **Terminate a task**
+- **Open the GUI interface**
+- **Auto-generated Logs**: Monitor the performance and output of each task via auto-created log files in the TaskLogs/ directory.
+- **Custom Icon Management**: All icons are stored in the auto-created Icons/ folder for future use.
+
+## 📁 Repository Structure
 ```
 pycronx/
 │
-├── PyCronX.bat              # Main code 
-├── TaskScheduler.py         # Calls runschedule.py and setups the GUI
-├── requirements.txt         # Dependencies
-├── runschedule.py           # Runs the target python script
-├── test.py                  # Test function
+├── PyCronX.bat              # Launches the GUI via BAT file
+├── TaskScheduler.py         # Main GUI interface
+├── runschedule.py           # Executes the scheduled tasks
+├── test.py                  # Sample script to schedule
+├── requirements.txt         # Required dependencies
 └── README.md
 ```
 
-## Setup
-First, clone this repo to your local machine: <br/>
+## 🚀 Installation
+### 1. Clone the Repository
 ```
 git clone https://github.com/bmestref/pycronx.git
+cd pycronx
 ```
-Next, create an environment to alocate the required libraries (only two libraries are required: ```Pillow``` and ```pystray```) via ```venv```: <br/>
+
+### 2. Create Environment and Install Dependencies
+- **Option A**: Using venv
 ```
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 ```
-Or optionally via ```conda```: <br/>
+- **Option B**: Using conda
 ```
 conda create -n pycronx_env python=3.10
 conda activate pycronx_env
 pip install -r requirements.txt
 ```
-If not using ```requirements.txt```, install straightforwardly these libraries: <br/>
+
+- **Option C**: Manual Installation
 ```
 pip install pillow pystray
 ```
 
-## Running the App
-To launch the GUI scheduler interface in case python is not installed in your local machine: <br>
-
-### Option 1: From Python
+## ▶️ Running the App
+- **Option 1**: Launch from Python
 ```
-<path of python.exe file from pycronx_env> TaskScheduler.py
+<full-path-to-pythonw.exe> TaskScheduler.py
 ```
+For example: <br/>
+```
+C:\Users\YourUser\.conda\envs\pycronx_env\pythonw.exe TaskScheduler.py
+```
+- **Option 2**: Launch from BAT file (if Python is installed and added to PATH)
+Just double-click the PyCronX.bat file. <br/>
 
-### Option 2: From .bat file 
-Double-click on the .bat file in case python is installed: <br/>
+Note: pythonw.exe is used to avoid opening a terminal window alongside the GUI. <br/>
 
-## Usage
-1- Launch the GUI. <br/>
+## 🧠 How to Use
+- Launch the GUI using the BAT file or direct command.
+- Click “Add Task” to create a new scheduled script.
+- Configure:
+  - Path to pythonw.exe
+  - Path to your target script
+  - Desired schedule (startup, periodic, daily, weekly)
+  - Icon display settings (show/hide icon)
+  - Enable startup execution
+- Click “Start” to schedule the task.
 
-2 - Click "Add Task" to schedule a new Python script. <br/>
+If the task is set to show an icon, you'll find it in the system tray. <br/>
 
-3 - Set: <br/>
+- Right-click the tray icon to:
+  - Open the interface
+  - View active tasks
+  - Terminate or exit the task
 
-  - Pythonw.exe path (can be found on your pycronx_env environment folder) <br/>
-  - Script path <br/>
-  - Interval/frequency schedule <br/>
-  - Display icon or run silently <br/>
-  - Set to run the script when computer startup <br/>
-    
-4 - Click "Start" to run the task. <br/>
+## 📂 Logs and Icons
+Logs for each task are saved in the TaskLogs/ folder. <br/>
+Icons are stored in the Icons/ folder — you can choose your own or let the system generate them automatically. <br/>
 
-5 - After launching, a small icon appears in the Windows taskbar tray (bottom-right) if the display icon was selected. <br/>
+## 🎥 Demo Video
+For a complete walkthrough and example use cases, please watch the video below: <br/>
+[Demostration Video](video_demostration.mp4)
 
-6 - Right-click the icon to access quick actions: <br/>
-
-  - Open the interface <br/>
-  - View scheduled tasks <br/>
-  - Exit the application <br/>
-    
-This enables background execution with minimal UI interference. <br/>
-
-For additional information, please see the video below. <br/>
-📺 [Watch the demo video](video_demostration.mp4)
